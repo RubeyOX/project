@@ -13,6 +13,7 @@ import Story from './components/Story'
 import Contact from './components/Contact'
 import Help from './components/Help'
 import Login from './components/Login'
+import DetailProduct from './components/DetailProduct'
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path='/contact' element={<Contact/>}></Route>
           <Route path='/help' element={<Help/>}></Route>
           <Route path='/login' element={<Login/>}></Route>
+          <Route path='/productdetail/:id' element={<DetailProduct/>}> </Route>
         </Routes>
       </BrowserRouter>
     </>

@@ -149,7 +149,6 @@ h6 {
 
 .bg-product {
   background-color: white;
-
 }
 
 .body-product {
@@ -276,4 +275,40 @@ h6 {
   border-radius: 50%;
   border: 3px solid white;
   cursor: pointer;
+}
+
+/**--------------------------------------------
+ *               Product Detail
+ *---------------------------------------------**/
+
+.product-detail{
+  max-width: 1340px;
+  margin: auto;
+  padding: 60px 14px;
+}
+.product-detail .detail-section{
+  display: flex;
+  justify-content: space-between;
+}
+.product-detail .detail-section .product-img{
+  display: flex;
+  flex-flow: wrap;
+  width: 49%;
+}
+.product-detail .detail-section .product-img img{
+  width: 100%;
+}
+.detail-section .product-img .another-img{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.detail-section .product-img .another-img img{
+  width: 48%;
+}
+.product-detail .detail-section .product-buy{
+  width: 46%;
+}
+.detail-section .product-buy .categories-header{
+  /* font-size: 14px; */
 }
