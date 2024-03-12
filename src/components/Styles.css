@@ -275,7 +275,19 @@ h6 {
   border-radius: 50%;
   border: 3px solid white;
   cursor: pointer;
+  position: relative;
 }
+.item-list .item .color-section .match-color:hover::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  bottom: -4px;
+  left: -4px;
+  right: -4px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
 
 /**--------------------------------------------
  *               Product Detail
@@ -309,6 +321,181 @@ h6 {
 .product-detail .detail-section .product-buy{
   width: 46%;
 }
+.detail-section .product-buy .header-detail{
+  display: flex;
+  justify-content: space-between;
+}
 .detail-section .product-buy .categories-header{
-  /* font-size: 14px; */
+  font-size: 14px;
+  margin-bottom: 16px;
+  opacity: 0.7;
+}
+.detail-section .product-buy .next-product-section button{
+  margin-left: 6px;
+  padding: 6px 7px;
+  background-color: transparent;
+  border: 1px solid black;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.detail-section .product-buy .next-product-section button:hover{
+  background-color: #C19A83;
+  color: white;
+}
+.detail-section .product-buy .categories-header-2{
+  font-size: 15px;
+  opacity: 0.7;
+}
+.detail-section .product-buy .product-name{
+  font-size: 25px;
+  margin-top: 10px;
+}
+.detail-section .product-buy .product-price{
+  margin-top: 5px;
+  color: #C19A83;
+  display: inline-block;
+}
+.detail-section .product-buy .free-ship{
+  font-size: 15px;
+  opacity: 0.7;
+  margin-left: 2px;
+}
+.detail-section .product-buy .product-description{
+  font-size: 15px;
+  margin-top: 10px;
+  opacity: 0.7;
+  word-spacing: 1px;
+}
+.detail-section .product-buy .color-section {
+  display: flex;
+  justify-content: space-between;
+  width: 85px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.detail-section .product-buy .color-section .match-color {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+
+.detail-section .product-buy .color-section .match-color:hover::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  bottom: -4px;
+  left: -4px;
+  right: -4px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.detail-section .product-buy .add-cart-section{
+  display: flex;
+  padding: 20px 0px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.detail-section .product-buy .add-cart-section button, .detail-section .product-buy .add-cart-section input{
+  padding: 10px 16px;
+  background-color: transparent;
+  border: 1px solid rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+.detail-section .product-buy .add-cart-section input{
+  border-right: none;
+  border-left: none;
+  width: 2.5rem;
+  font-size: 18px;
+}
+.detail-section .product-buy .add-cart-section input:focus{
+  outline: 1px dotted black;
+  border: none;
+}
+.detail-section .product-buy .add-cart-section .addtocart{
+  margin-left: 30px;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  font-family: inherit;
+}
+.detail-section .product-buy .product-meta{
+  margin: 10px 0;
+  display: flex;
+}
+.detail-section .product-buy .product-meta span{
+  font-size: 14px;
+  margin-right: 20px;
+}
+.detail-section .product-buy .bank-list{
+  margin-top: 30px;
+  padding: 8px;
+  border: 1px solid rgba(0,0,0,0.1);
+  position: relative;
+}
+.detail-section .product-buy .bank-list .title-bank{
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  top: -15px;
+  left: 36%;
+  background-color: white;
+  padding: 0 15px;
+  opacity: 0.5;
+}
+.detail-section .product-buy .bank-list .bank-content{
+  display: flex;
+  align-items: center;
+  width: 45%;
+  margin: auto;
+  justify-content: space-around;
+}
+.detail-section .product-buy .bank-list .bank-type{
+  font-size: 50px;
+  /* color: gray; */
+}
+.detail-section .product-buy .bank-list .bank-visa{
+  color: #0E4595;
+}
+.detail-section .product-buy .bank-list .bank-mastercard{
+  color: red;
+}
+.detail-section .product-buy .bank-list .bank-American{
+  font-size: 40px;
+  color: #2557D6;
+}
+.detail-section .product-buy .bank-list .bank-discover{
+  color: #4D4D4D;
+}
+.detail-section .product-buy .freeShip-section{
+  margin-top: 30px;
+  opacity: 0.5;
+}
+.detail-section .product-buy .freeShip-section b{
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+.detail-section .product-buy .freeShip-section p{
+  margin-bottom: 3px;
+  font-size: 15px;
+}
+.product-detail .description-section{
+  margin-top: 50px;
+  border: 1px solid rgba(0,0,0,0.1);
+  padding: 20px;
+}
+.product-detail .description-section .title{
+  color: #C19A83;
+}
+.product-detail .description-section .test{
+  font-size: 30px;
+}
+.product-detail .description-section .test .active{
+  background-color: black;
+}
+.product-detail .description-section .test .none{
+  background-color: transparent;
 }
