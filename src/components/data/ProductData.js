@@ -10,7 +10,9 @@ export const productItem=[{
     categories:["Bedroom","Decor","Office"],
     discount:2,
     stock:9,
-    productColor:[{nameColor:"black",colorCode:"#000000"},{nameColor:"bronze",colorCode:"#8F6453"},{nameColor:"gold",colorCode:"#DABCA2"}]
+    productColor:[{nameColor:"black",colorCode:"#000000"},{nameColor:"bronze",colorCode:"#8F6453"},{nameColor:"gold",colorCode:"#DABCA2"}],
+    reviewComment:[],
+    featrured:true,
 },{
     img:[
         "https://websitedemos.net/furniture-shop-04/wp-content/uploads/sites/1116/2022/07/product-01-a.jpg",
@@ -23,7 +25,9 @@ export const productItem=[{
     categories:["Bedroom"],
     discount:2,
     stock:6,
-    productColor:[{nameColor:"black",colorCode:"#000000"},{nameColor:"bronze",colorCode:"#8F6453"},{nameColor:"gold",colorCode:"#DABCA2"}]
+    productColor:[{nameColor:"black",colorCode:"#000000"},{nameColor:"bronze",colorCode:"#8F6453"},{nameColor:"gold",colorCode:"#DABCA2"}],
+    reviewComment:[],
+    featrured:false
 },{
     img:[
         "https://websitedemos.net/furniture-shop-04/wp-content/uploads/sites/1116/2022/07/product-06-a.jpg",
@@ -36,7 +40,9 @@ export const productItem=[{
     categories:["Bedroom"],
     discount:3,
     stock:32,
-    productColor:[{nameColor:"black",colorCode:"#000000"},{nameColor:"bronze",colorCode:"#8F6453"},{nameColor:"gold",colorCode:"#DABCA2"}]
+    productColor:[{nameColor:"black",colorCode:"#000000"},{nameColor:"bronze",colorCode:"#8F6453"},{nameColor:"gold",colorCode:"#DABCA2"}],
+    reviewComment:[],
+    featrured:false
 },{
     img:[
         "https://websitedemos.net/furniture-shop-04/wp-content/uploads/sites/1116/2022/07/product-04-a.jpg",
@@ -49,7 +55,9 @@ export const productItem=[{
     categories:["Decor","Living Room"],
     discount:3,
     stock:12,
-    productColor:[{nameColor:"black",colorCode:"#000000"},{nameColor:"bronze",colorCode:"#8F6453"},{nameColor:"gold",colorCode:"#DABCA2"}]
+    productColor:[{nameColor:"black",colorCode:"#000000"},{nameColor:"bronze",colorCode:"#8F6453"},{nameColor:"gold",colorCode:"#DABCA2"}],
+    reviewComment:[],
+    featrured:true
 },{
     img:[
         "https://websitedemos.net/furniture-shop-04/wp-content/uploads/sites/1116/2022/07/product-10-a.jpg",
@@ -62,7 +70,9 @@ export const productItem=[{
     categories:["Decor","Office"],
     discount:2,
     stock:15,
-    productColor:[{nameColor:"black",colorCode:"#000000"},{nameColor:"bronze",colorCode:"#8F6453"},{nameColor:"gold",colorCode:"#DABCA2"}]
+    productColor:[{nameColor:"black",colorCode:"#000000"},{nameColor:"bronze",colorCode:"#8F6453"},{nameColor:"gold",colorCode:"#DABCA2"}],
+    reviewComment:[],
+    featrured:false
 },{
     img:[
         "https://websitedemos.net/furniture-shop-04/wp-content/uploads/sites/1116/2022/07/product-07-a.jpg",
@@ -75,7 +85,9 @@ export const productItem=[{
     categories:["Decor","Office"],
     discount:2,
     stock:5,
-    productColor:[{nameColor:"black",colorCode:"#000000"},{nameColor:"bronze",colorCode:"#8F6453"},{nameColor:"gold",colorCode:"#DABCA2"}]
+    productColor:[{nameColor:"black",colorCode:"#000000"},{nameColor:"bronze",colorCode:"#8F6453"},{nameColor:"gold",colorCode:"#DABCA2"}],
+    reviewComment:[],
+    featrured:true
 },{
     img:[
         "https://websitedemos.net/furniture-shop-04/wp-content/uploads/sites/1116/2022/07/product-03-a.jpg",
@@ -88,7 +100,9 @@ export const productItem=[{
     categories:["Office"],
     discount:3,
     stock:'out of stock',
-    productColor:[{nameColor:"black",colorCode:"#000000"},{nameColor:"bronze",colorCode:"#8F6453"},{nameColor:"gold",colorCode:"#DABCA2"}]
+    productColor:[{nameColor:"black",colorCode:"#000000"},{nameColor:"bronze",colorCode:"#8F6453"},{nameColor:"gold",colorCode:"#DABCA2"}],
+    reviewComment:[],
+    featrured:true
 },{
     img:[
         "https://websitedemos.net/furniture-shop-04/wp-content/uploads/sites/1116/2022/07/product-05-a.jpg",
@@ -101,7 +115,9 @@ export const productItem=[{
     categories:["Decor","Office"],
     discount:2,
     stock:42,
-    productColor:[{nameColor:"black",colorCode:"#000000"},{nameColor:"bronze",colorCode:"#8F6453"},{nameColor:"gold",colorCode:"#DABCA2"}]
+    productColor:[{nameColor:"black",colorCode:"#000000"},{nameColor:"bronze",colorCode:"#8F6453"},{nameColor:"gold",colorCode:"#DABCA2"}],
+    reviewComment:[],
+    featrured:false
 },{
     img:[
         "https://websitedemos.net/furniture-shop-04/wp-content/uploads/sites/1116/2022/07/product-08-a.jpg",
@@ -114,7 +130,9 @@ export const productItem=[{
     categories:["Bedroom","Decor","Office"],
     discount:2,
     stock:10,
-    productColor:[{nameColor:"black",colorCode:"#000000"},{nameColor:"bronze",colorCode:"#8F6453"},{nameColor:"gold",colorCode:"#DABCA2"}]
+    productColor:[{nameColor:"black",colorCode:"#000000"},{nameColor:"bronze",colorCode:"#8F6453"},{nameColor:"gold",colorCode:"#DABCA2"}],
+    reviewComment:[],
+    featrured:false
 },{
     img:[
         "https://websitedemos.net/furniture-shop-04/wp-content/uploads/sites/1116/2022/07/product-02-a.jpg",
@@ -127,7 +145,9 @@ export const productItem=[{
     categories:["Bedroom","Decor","Living Room","Office"],
     discount:2,
     stock:'out of stock',
-    productColor:[{nameColor:"black",colorCode:"#000000"},{nameColor:"bronze",colorCode:"#8F6453"},{nameColor:"gold",colorCode:"#DABCA2"}]
+    productColor:[{nameColor:"black",colorCode:"#000000"},{nameColor:"bronze",colorCode:"#8F6453"},{nameColor:"gold",colorCode:"#DABCA2"}],
+    reviewComment:[],
+    featrured:false
 },{
     img:[
         "https://websitedemos.net/furniture-shop-04/wp-content/uploads/sites/1116/2022/07/product-16-a.jpg",
@@ -140,7 +160,9 @@ export const productItem=[{
     categories:["Bedroom"],
     discount:3,
     stock:17,
-    productColor:[{nameColor:"black",colorCode:"#000000"},{nameColor:"bronze",colorCode:"#8F6453"},{nameColor:"gold",colorCode:"#DABCA2"}]
+    productColor:[{nameColor:"black",colorCode:"#000000"},{nameColor:"bronze",colorCode:"#8F6453"},{nameColor:"gold",colorCode:"#DABCA2"}],
+    reviewComment:[],
+    featrured:false
 },{
     img:[
         "https://websitedemos.net/furniture-shop-04/wp-content/uploads/sites/1116/2022/07/product-15-a.jpg",
@@ -153,7 +175,9 @@ export const productItem=[{
     categories:["Bedroom","Decor"],
     discount:3,
     stock:21,
-    productColor:[{nameColor:"black",colorCode:"#000000"},{nameColor:"bronze",colorCode:"#8F6453"},{nameColor:"gold",colorCode:"#DABCA2"}]
+    productColor:[{nameColor:"black",colorCode:"#000000"},{nameColor:"bronze",colorCode:"#8F6453"},{nameColor:"gold",colorCode:"#DABCA2"}],
+    reviewComment:[],
+    featrured:true
 },{
     img:[
         "https://websitedemos.net/furniture-shop-04/wp-content/uploads/sites/1116/2022/07/product-14-a.jpg",
@@ -166,7 +190,9 @@ export const productItem=[{
     categories:["Living Room","Office"],
     discount:3,
     stock:9,
-    productColor:[{nameColor:"black",colorCode:"#000000"},{nameColor:"bronze",colorCode:"#8F6453"},{nameColor:"gold",colorCode:"#DABCA2"}]
+    productColor:[{nameColor:"black",colorCode:"#000000"},{nameColor:"bronze",colorCode:"#8F6453"},{nameColor:"gold",colorCode:"#DABCA2"}],
+    reviewComment:[],
+    featrured:false
 },{
     img:[
         "https://websitedemos.net/furniture-shop-04/wp-content/uploads/sites/1116/2022/07/product-13-a.jpg",
@@ -179,7 +205,9 @@ export const productItem=[{
     categories:["Living Room","Office"],
     discount:2,
     stock:'out of stock',
-    productColor:[{nameColor:"black",colorCode:"#000000"},{nameColor:"bronze",colorCode:"#8F6453"},{nameColor:"gold",colorCode:"#DABCA2"}]
+    productColor:[{nameColor:"black",colorCode:"#000000"},{nameColor:"bronze",colorCode:"#8F6453"},{nameColor:"gold",colorCode:"#DABCA2"}],
+    reviewComment:[],
+    featrured:false
 },{
     img:[
         "https://websitedemos.net/furniture-shop-04/wp-content/uploads/sites/1116/2022/07/product-12-a.jpg",
@@ -192,7 +220,9 @@ export const productItem=[{
     categories:["Bedroom","Office"],
     discount:2,
     stock:15,
-    productColor:[{nameColor:"black",colorCode:"#000000"},{nameColor:"bronze",colorCode:"#8F6453"},{nameColor:"gold",colorCode:"#DABCA2"}]
+    productColor:[{nameColor:"black",colorCode:"#000000"},{nameColor:"bronze",colorCode:"#8F6453"},{nameColor:"gold",colorCode:"#DABCA2"}],
+    reviewComment:[],
+    featrured:true
 },{
     img:[
         "https://websitedemos.net/furniture-shop-04/wp-content/uploads/sites/1116/2022/07/product-11-a.jpg",
@@ -205,6 +235,8 @@ export const productItem=[{
     categories:["Living Room"],
     discount:3,
     stock:'out of stock',
-    productColor:[{nameColor:"black",colorCode:"#000000"},{nameColor:"bronze",colorCode:"#8F6453"},{nameColor:"gold",colorCode:"#DABCA2"}]
+    productColor:[{nameColor:"black",colorCode:"#000000"},{nameColor:"bronze",colorCode:"#8F6453"},{nameColor:"gold",colorCode:"#DABCA2"}],
+    reviewComment:[],
+    featrured:true
 }
 ]
