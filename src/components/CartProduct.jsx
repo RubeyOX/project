@@ -2,15 +2,18 @@ import React, { useState } from 'react'
 import { CiCirclePlus } from "react-icons/ci";
 import { CiCircleMinus } from "react-icons/ci";
 import { CiCircleRemove } from "react-icons/ci";
+import { useNavigate } from 'react-router-dom';
 
 let CartProduct=((props)=>{
     const { storage, data } = props
     let defaultstorage=JSON.parse(localStorage.getItem('yourcart'))
+    let navigate=useNavigate()
     let amount=storage?.amount
-
+    
+    
     let subtotal=(data?.price) * (storage?.amount)
-    let countCart = (type) => {
-        let findProduct = defaultstorage.findIndex((it) => it.id === storage?.id);
+    let findProduct = defaultstorage.findIndex((it) => it.id === storage?.id);
+    let countCart = ((type) => {
         if (type === 'plus') {
             defaultstorage[findProduct].amount = amount + 1;
             localStorage.setItem('yourcart', JSON.stringify(defaultstorage));
@@ -20,7 +23,13 @@ let CartProduct=((props)=>{
             localStorage.setItem('yourcart', JSON.stringify(defaultstorage));
             window.location.reload()
         }
-    };
+    });
+    
+    let deleteCart=(()=>{
+        defaultstorage.splice(findProduct,1)
+        localStorage.setItem('yourcart', JSON.stringify(defaultstorage));
+        window.location.reload()
+    })
     
     return (
         <div className="cart_item">
@@ -31,7 +40,7 @@ let CartProduct=((props)=>{
                         alt="product"
                     />
                 </div>
-                <p>{data?.productName}</p>
+                <p onClick={()=>{navigate('/productdetail/'+props.data.id)}}>{data?.productName}</p>
             </div>
             <div className="cart_item_info">
                 <p className="price">Price: ${data?.price}</p>
@@ -42,7 +51,7 @@ let CartProduct=((props)=>{
                 </div>
             </div>
             <p className="subtotal">Price: ${subtotal}</p>
-            <span className="delete-cart"><CiCircleRemove /></span>
+            <span className="delete-cart" onClick={deleteCart}><CiCircleRemove /></span>
         </div>
     )
 })

@@ -38,23 +38,33 @@ export default function Cart() {
       })
     }
   })
+  
+  let [subtotal, setSubtotal] = useState(0)
+  useEffect(() => {
+    if (storagebuy !== null) {
+      let allsubtotal = 0
+      let subtotal = 0
+      storagebuy.map((product) => {
+        let findIndex = data.findIndex((it) => {
+          return it.id == product.id
+        })
+        let dataProduct = data[findIndex]
+        subtotal = dataProduct?.price * product?.amount
 
-  let renderSubtotal = (() => {
-    let allsubtotal = 0
-    let subtotal = 0
-    storagebuy.map((product) => {
-      let findIndex = data.findIndex((it) => {
-        return it.id == product.id
+        console.log(subtotal)
+        allsubtotal += subtotal
+
       })
-      let dataProduct = data[findIndex]
-      subtotal = dataProduct?.price * product?.amount
+      setSubtotal(allsubtotal)
+    }
+  }, [storagebuy])
 
-      console.log(subtotal)
-      allsubtotal += subtotal
-
-    })
-    return allsubtotal
-  })
+  let [total, setTotal] = useState(0)
+  useEffect(() => {
+    if (storagebuy !== null) {
+      setTotal(subtotal + 25)
+    }
+  }, [subtotal])
 
   return (
     <div>
@@ -77,15 +87,15 @@ export default function Cart() {
               <h3>Summary Cart</h3>
               <div className="summary_item">
                 <p>Subtotal</p>
-                <p>${renderSubtotal()}</p>
+                <p>${subtotal}</p>
               </div>
               <div className="summary_item">
                 <p>Shipping</p>
-                <p>$10</p>
+                <p>$25</p>
               </div>
               <div className="summary_item">
                 <p>Total</p>
-                <p>$310</p>
+                <p>${total}</p>
               </div>
               <NavLink to="/checkout">
                 <button className="button_submit">Process to Checkout</button>

@@ -1263,6 +1263,7 @@ h6 {
 }
 .cart_item .cart-product p{
   width: 100px;
+  cursor: pointer;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1281,6 +1282,7 @@ h6 {
   object-position: center;
   border-radius: 50%;
 }
+
 .cart_item_quantity {
   display: flex;
   justify-content: flex-start;

@@ -138,7 +138,7 @@ export default function DetailProduct() {
         return it.id == yourcart.id
       })
       if (findcart > -1) {
-        cartstorage[findcart].amount = yourcart.amount
+        cartstorage[findcart].amount += yourcart.amount
       } else {
         cartstorage.push(yourcart)
       }
