@@ -38,7 +38,7 @@ export default function Cart() {
       })
     }
   })
-  
+
   let [subtotal, setSubtotal] = useState(0)
   useEffect(() => {
     if (storagebuy !== null) {
@@ -62,10 +62,16 @@ export default function Cart() {
   let [total, setTotal] = useState(0)
   useEffect(() => {
     if (storagebuy !== null) {
-      setTotal(subtotal + 25)
+      setTotal(subtotal + ship())
     }
   }, [subtotal])
-
+  let ship=(()=>{
+    if(subtotal>0){
+      return 25
+    }else{
+      return 0
+    }
+  })
   return (
     <div>
       <div className="aboutUs_Header">
@@ -91,7 +97,7 @@ export default function Cart() {
               </div>
               <div className="summary_item">
                 <p>Shipping</p>
-                <p>$25</p>
+                <p>${ship()}</p>
               </div>
               <div className="summary_item">
                 <p>Total</p>
