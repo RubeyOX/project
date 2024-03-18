@@ -1,7 +1,7 @@
 import { addDoc, deleteDoc, onSnapshot, query, doc, updateDoc } from 'firebase/firestore';
 import React, { useContext, useEffect, useState } from 'react'
 import { FirebaseContext } from '../contexts/FirebaseProvider';
-import ProductItem from './renderProduct/ProductItem';
+import ProductItem from './ProductItem';
 
 export default function Office(props) {
   let [data, setData] = useState([])

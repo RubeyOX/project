@@ -13,6 +13,15 @@ export const productItem=[{
     productColor:[{nameColor:"black",colorCode:"#000000"},{nameColor:"bronze",colorCode:"#8F6453"},{nameColor:"gold",colorCode:"#DABCA2"}],
     reviewComment:[],
     featrured:true,
+    customer:[{
+        nameCustomer:'Jade',
+        country:'United State',
+        phone:'0128423921',
+        zipcode:'10001',
+        note:'Packed in 2 layers',
+        payment:'Cash',
+        idProduct:''
+    }]
 },{
     img:[
         "https://websitedemos.net/furniture-shop-04/wp-content/uploads/sites/1116/2022/07/product-01-a.jpg",
@@ -151,7 +160,7 @@ export const productItem=[{
 },{
     img:[
         "https://websitedemos.net/furniture-shop-04/wp-content/uploads/sites/1116/2022/07/product-16-a.jpg",
-        "https://websitedemos.net/furniture-shop-04/wp-content/uploads/sites/1116/2022/07/product-16-a.jpg",
+        "https://websitedemos.net/furniture-shop-04/wp-content/uploads/sites/1116/2022/07/product-16-b.jpg",
         "https://websitedemos.net/furniture-shop-04/wp-content/uploads/sites/1116/2022/07/product-16-c.jpg"
     ],
     productName:"Metal Legs Chair",
@@ -211,7 +220,7 @@ export const productItem=[{
 },{
     img:[
         "https://websitedemos.net/furniture-shop-04/wp-content/uploads/sites/1116/2022/07/product-12-a.jpg",
-        "https://websitedemos.net/furniture-shop-04/wp-content/uploads/sites/1116/2022/07/product-12-a.jpg",
+        "https://websitedemos.net/furniture-shop-04/wp-content/uploads/sites/1116/2022/07/product-12-c-400x488.jpg",
         "https://websitedemos.net/furniture-shop-04/wp-content/uploads/sites/1116/2022/07/product-12-b.jpg"
     ],
     productName:"Round Stainless Steel Coffee Table",

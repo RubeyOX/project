@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './components/Styles.css'
 import './App.css'
 import { BrowserRouter, Route, RouterProvider, Routes, createBrowserRouter } from 'react-router-dom'
-import Navbar from './static-components/Navbar'
+import ScrollToTop from "react-scroll-to-top";
 import Shop_all from './components/Shop_all'
 import Decor from './components/Decor'
 import Bedroom from './components/Bedroom'
@@ -13,6 +13,10 @@ import Story from './components/Story'
 import Contact from './components/Contact'
 import Help from './components/Help'
 import Login from './components/Login'
+import Navbar from './components/static-components/Navbar';
+import Footer_components from './components/static-components/Footer';
+import Cart from './components/Cart';
+import Checkout from './components/Checkout';
 import DetailProduct from './components/DetailProduct'
 
 function App() {
@@ -20,6 +24,7 @@ function App() {
     <>
       <BrowserRouter>
         <Navbar />
+        <ScrollToTop smooth/>
         <Routes>
           <Route path='/'  element={<Homepage/>}></Route>
           <Route path="/shop_all" element={<Shop_all categories="Shop"/>} />
@@ -30,9 +35,12 @@ function App() {
           <Route path='/story' element={<Story/>}></Route>
           <Route path='/contact' element={<Contact/>}></Route>
           <Route path='/help' element={<Help/>}></Route>
+          <Route path='/cart' element={<Cart/>}></Route>
+          <Route path='/checkout' element={<Checkout/>}></Route>
           <Route path='/login' element={<Login/>}></Route>
           <Route path='/productdetail/:id' element={<DetailProduct/>}> </Route>
         </Routes>
+        <Footer_components />
       </BrowserRouter>
     </>
   )
