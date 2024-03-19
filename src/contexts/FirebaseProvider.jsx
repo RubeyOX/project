@@ -27,8 +27,9 @@ const FirebaseProvider = ({ children }) => {
   const db = getFirestore(app);
   const messCollect = collection(db, "product"); // Specify the collection path here
   const messItem = collection(db, "productItem"); // Specify the collection path here
+  const messCustomer=collection(db,"customer");
   return (
-    <FirebaseContext.Provider value={{ app, messCollect, messItem }}>
+    <FirebaseContext.Provider value={{ app, messCollect, messItem , messCustomer}}>
       {children}
     </FirebaseContext.Provider>
   );

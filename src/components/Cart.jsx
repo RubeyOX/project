@@ -65,6 +65,7 @@ export default function Cart() {
       setTotal(subtotal + ship())
     }
   }, [subtotal])
+  
   let ship=(()=>{
     if(subtotal>0){
       return 25
