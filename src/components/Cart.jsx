@@ -50,8 +50,6 @@ export default function Cart() {
         })
         let dataProduct = data[findIndex]
         subtotal = dataProduct?.price * product?.amount
-
-        console.log(subtotal)
         allsubtotal += subtotal
 
       })
