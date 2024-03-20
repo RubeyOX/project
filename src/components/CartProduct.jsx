@@ -24,19 +24,21 @@ let CartProduct=((props)=>{
             window.location.reload()
         }
     });
-    
+    let findColor=data?.productColor.findIndex((product)=>{
+        return product?.colorCode==storage?.color
+      })
+      console.log(findColor)
     let deleteCart=(()=>{
         defaultstorage.splice(findProduct,1)
         localStorage.setItem('yourcart', JSON.stringify(defaultstorage));
         window.location.reload()
     })
-    
     return (
         <div className="cart_item">
             <div className="cart-product">
                 <div className="cart_item_img">
                     <img
-                        src={storage?.img}
+                        src={data?.img[findColor]}
                         alt="product"
                     />
                 </div>
