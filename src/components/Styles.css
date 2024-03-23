@@ -28,6 +28,10 @@ h6 {
 }
 
 .button_submit {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
   font-family: "Oswald", sans-serif;
   font-weight: 600;
   padding: 10px 30px;
@@ -507,6 +511,56 @@ h6 {
   width: 100%;
   border-bottom: solid 1px #36363666;
   transition: all 0.3s ease-in-out;
+}
+
+/**--------------------------------------------
+ *               LOGIN SECTION
+ *---------------------------------------------**/
+.login_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 0;
+  background-color: #f5f5f5;
+  width: 500px;
+}
+
+.login_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.login_box_input {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.login_box_input input {
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+}
+
+.login_box_button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 /*============================ END OF SECTION ============================*/
@@ -1252,7 +1306,7 @@ h6 {
   display: flex;
   /* justify-content: space-around; */
   align-items: center;
-  background-color: #F1F2F2;
+  background-color: #f1f2f2;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -1306,8 +1360,7 @@ h6 {
 }
 
 .cart_item_img img {
-  width: 100px;
-  height: 100px;
+  width: 100%;
   object-fit: cover;
   object-position: center;
   border-radius: 50%;
@@ -1368,7 +1421,7 @@ h6 {
 .cart_summary h3 {
   font-size: 25px;
   padding: 20px 0;
-  background-color: #F1F2F2;
+  background-color: #f1f2f2;
   width: 100%;
   text-align: center;
   border-bottom-left-radius: 45%;
@@ -1607,3 +1660,449 @@ h6 {
 }
 
 /*============================ END OF SECTION ============================*/
+
+
+/*============================== RESPONSIVE ==============================*/
+
+@media only screen and (min-width: 769px) and (max-width: 1025px) {
+  .banner h5 {
+    font-size: 28px;
+  }
+
+  .banner h1 {
+    font-size: 70px;
+  }
+
+  .banner h4 {
+    font-size: 35px;
+  }
+
+  .banner .btn {
+    padding: 25px 35px;
+    font-size: 30px;
+  }
+
+  .shopCategory_box {
+    width: 80%;
+    justify-content: center
+  }
+
+  .shopCategory_box a {
+    margin: 10px;
+  }
+
+  .shopCategory_box img {
+    width: 300px;
+  }
+
+  .item-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+  }
+
+  .TitleBox h6 {
+    font-size: 25px;
+  }
+
+  .TitleBox h2 {
+    font-size: 50px;
+  }
+
+  .reviewContainer {
+    width: 90%;
+  }
+
+  .reviewCard {
+    width: 31%;
+  }
+
+  .reviewCard p {
+    font-size: 20px;
+  }
+
+  .newArrival {
+    width: 90%;
+  }
+
+  .newArrival_banner .overlay h6 {
+    font-size: 25px;
+  }
+
+  .newArrival_banner .overlay h3 {
+    font-size: 45px;
+  }
+
+  .newArrival_banner .overlay p {
+    font-size: 28px;
+  }
+
+  .body-product {
+    width: 90%;
+  }
+
+  .product-section .toolbar-product .sort-section {
+    width: 20%;
+  }
+
+  .product-detail {
+    width: 90%;
+  }
+
+  .product-detail .description-section .features .img-section .img-featurse {
+    width: 100%;
+    height: 500px;
+  }
+
+  .product-detail .description-section .features .information {
+    height: 330px;
+    padding-right: 14%;
+  }
+
+  .product-detail .description-section .instruction .information {
+    height: 520px;
+  }
+
+  .product-detail .description-section .instruction .img-featurse {
+    height: 520px;
+  }
+
+  .description-section h4 {
+    font-size: 28px;
+  }
+
+  .detail-section .product-buy .header-detail .categories-header {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .detail-section .product-buy .categories-header-2 {
+    font-size: 18px;
+  }
+
+  .detail-section .product-buy .product-name {
+    font-size: 28px;
+  }
+
+  .detail-section .product-buy .product-description {
+    font-size: 18px;
+  }
+
+  .detail-section .product-buy .product-meta span {
+    font-size: 16px;
+  }
+
+  .detail-section .product-buy .freeShip-section b {
+    font-size: 18px;
+  }
+
+  .detail-section .product-buy .freeShip-section p {
+    font-size: 17px;
+  }
+
+  .description-section .warranty .information-warranty {
+    font-size: 18px;
+  }
+
+  .description-section .warranty .list-warranty p {
+    font-size: 18px;
+  }
+
+  .description-section .review .user-comment span {
+    font-size: 20px;
+  }
+
+  .description-section .review .user-comment .comment-mail {
+    font-size: 15px;
+  }
+
+  .description-section .review .user-comment .comment {
+    font-size: 16px;
+  }
+
+  .description-section .review .yourReview-section .comment-title {
+    font-size: 25px;
+  }
+
+  .description-section .review .yourReview-section .note {
+    font-size: 17px;
+  }
+
+  .description-section .review .yourReview-section .review-comment .your-review-input {
+    font-size: 18px;
+  }
+
+  .cart_container {
+    width: 90%;
+    display: block;
+  }
+
+  .cart_left {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .cart_right {
+    margin: auto;
+    width: 50%;
+  }
+
+  .cart_left .nametag-cart p {
+    font-size: 20px;
+  }
+
+  .cart_item_img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .cart_item .cart-product p {
+    width: 130px;
+    font-size: 20px;
+  }
+  .cart_item p, .cart_item_info .price, .cart_item_quantity, .cart-item .subtotal{
+    font-size: 22px;
+  }
+  .cart_item_quantity .amount{
+    font-size: 25px;
+  }
+  .cart_summary button {
+    font-size: 15px;
+    padding: 10px 30px;
+  }
+  .cart_item .delete-cart{
+    font-size: 30px;
+  }
+  .checkout-container {
+    width: 90%;
+  }
+  .your-order table .product-name {
+    padding: 15px;
+  }
+
+  .your-order table .product-name img {
+    margin-right: 10px;
+  }
+  .checkout_form .tag-name, .your-order .tag-name{
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .banner {
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .banner h5 {
+    font-size: 18px;
+  }
+
+  .banner h1 {
+    font-size: 30px;
+  }
+
+  .banner h4 {
+    font-size: 23px;
+  }
+
+  .bannerButton {
+    width: 100%;
+  }
+
+  .shopCategory_box {
+    width: 80%;
+    justify-content: center
+  }
+
+  .shopCategory_box a {
+    margin: 10px;
+    padding: 0;
+  }
+
+  .shopCategory_box img {
+    width: 300px;
+  }
+
+  .item-list {
+    grid-template-columns: repeat(1, minmax(0, 1fr))
+  }
+
+  .TitleBox h6 {
+    font-size: 20px;
+  }
+
+  .TitleBox h2 {
+    font-size: 35px;
+  }
+
+  .item-list .item .color-section {
+    width: 30%;
+  }
+
+  .reviewContainer {
+    width: 90%;
+    display: block;
+  }
+
+  .reviewCard {
+    width: 100%;
+    margin: 25px 0;
+  }
+
+  .reviewCard p {
+    font-size: 20px;
+  }
+
+  .newArrival_banner .overlay h6 {
+    font-size: 15px;
+  }
+
+  .newArrival_banner .overlay h3 {
+    font-size: 21px;
+  }
+
+  .newArrival_banner .overlay p {
+    font-size: 17px;
+  }
+
+  .newArrival {
+    width: 90%;
+  }
+
+  .OurQualities {
+    display: block;
+  }
+
+  .OurQualities_Box {
+    width: 100%;
+  }
+  .product-section .toolbar-product .sort-section{
+    width: 35%;
+  }
+  .product-detail .detail-section{
+    display: block;
+  }
+  .product-detail .detail-section .product-img{
+    width: 100%;
+  }
+  .product-detail .detail-section .product-buy{
+    margin-top: 30px;
+    width: 100%;
+  }
+  .product-detail .description-section .few-word{
+    display: block;
+  }
+  .product-detail .description-section .few-word h4{
+    width: 100%;
+  }
+  .product-detail .description-section .few-word .information{
+    width: 100%;
+    margin: 30px 0;
+  }
+  .product-detail .description-section .features, .product-detail .description-section .instruction{
+    display: block;
+  }
+  .product-detail .description-section .padding-information{
+    padding: 30px 18px;
+  }
+  .product-detail .description-section .features .information{
+    width: 100%;
+    padding-right:unset;
+    position:unset;
+    
+  }
+  .product-detail .description-section .features .img-section, .product-detail .description-section .instruction .img-section{
+    display: none;
+  }
+  .product-detail .description-section .instruction .information{
+    width: 100%;
+  }
+  .product-detail .description-section .instruction .information{
+    padding: 30px;
+    height: 400px;
+  }
+  .product-detail .description-section .instruction .information h4{
+    text-align: center;
+  }
+  .product-detail .description-section .warranty .padding-information{
+    display: block;
+  }
+  .description-section .warranty h4, .description-section .warranty .information-warranty, .description-section .warranty .list-warranty{
+    width: 100%;
+  }
+  .description-section .warranty .information-warranty{
+    margin: 20px 0;
+  }
+  .description-section .more-information .type-product .color-type{
+    width: 20%;
+  }
+  .description-section .review .yourReview-section .review-comment .your-information{
+    display: block;
+  }
+  .review .yourReview-section .review-comment .your-information .your-name-section{
+    width: 100%;
+    margin: 20px 0;
+  }
+  .review .yourReview-section .review-comment .your-information .your-email-section{
+    width: 100%;
+  }
+  .review .yourReview-section .review-comment .submit{
+    width: 100%;
+  }
+  .product-detail .related-product-section .item-list{
+    flex-wrap: wrap;
+    margin: 0 20px;
+  }
+  .item-list .item{
+    width: 47%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .product-detail .related-product-section .item-list .item-name{
+    font-size: 19px;
+    width: 80%;
+    margin: auto;
+  }
+  .cart_container{
+    display: block;
+    width: 90%;
+  }
+  .cart_left{
+    width: 100%;
+  }
+  .cart_item_img{
+    width: 60px;
+    height: 60px;
+  }
+  .cart_item{
+    padding: 20px 15px;
+  }
+  .cart_item .cart-product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .cart_item_info{
+    gap: 0;
+    font-size: 15px;
+  }
+  .nametag-cart .price{
+    width: 15%;
+  }
+  .cart_item_info .price {
+    width: 39%;
+  }
+  .nametag-cart .product{
+    width: 28%;
+  }
+  .cart_right{
+    width: 100%;
+    margin-top: 40px;
+  }
+  .checkout-container{
+    width: 90%;
+    display: block;
+  }
+  .checkout-container input, .checkout-container .checkout_info, .checkout-container form{
+    width: 100%;
+  }
+}
